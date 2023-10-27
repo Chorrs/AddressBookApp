@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		678895DA2AEB110700844A0E /* PersonalListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678895D92AEB110700844A0E /* PersonalListsViewController.swift */; };
+		678895DC2AEB118900844A0E /* AdvancedPersonalListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678895DB2AEB118900844A0E /* AdvancedPersonalListsViewController.swift */; };
+		678895DE2AEB138D00844A0E /* SelectedContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678895DD2AEB138D00844A0E /* SelectedContactViewController.swift */; };
+		67ACA9612AEBE6C900B511AF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACA9602AEBE6C900B511AF /* TabBarViewController.swift */; };
+		67C3CC7E2AEA8F6D0095939B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3CC7D2AEA8F6D0095939B /* DataStore.swift */; };
 		67D474B62AE85F4E00D98B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D474B52AE85F4E00D98B2A /* AppDelegate.swift */; };
 		67D474B82AE85F4E00D98B2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D474B72AE85F4E00D98B2A /* SceneDelegate.swift */; };
-		67D474BA2AE85F4E00D98B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D474B92AE85F4E00D98B2A /* ViewController.swift */; };
 		67D474BD2AE85F4E00D98B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D474BB2AE85F4E00D98B2A /* Main.storyboard */; };
 		67D474BF2AE85F5400D98B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D474BE2AE85F5400D98B2A /* Assets.xcassets */; };
 		67D474C22AE85F5400D98B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D474C02AE85F5400D98B2A /* LaunchScreen.storyboard */; };
+		67D474CA2AE8728300D98B2A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D474C92AE8728300D98B2A /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		678895D92AEB110700844A0E /* PersonalListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalListsViewController.swift; sourceTree = "<group>"; };
+		678895DB2AEB118900844A0E /* AdvancedPersonalListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPersonalListsViewController.swift; sourceTree = "<group>"; };
+		678895DD2AEB138D00844A0E /* SelectedContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedContactViewController.swift; sourceTree = "<group>"; };
+		67ACA9602AEBE6C900B511AF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		67C3CC7D2AEA8F6D0095939B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		67D474B22AE85F4E00D98B2A /* AddressBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D474B52AE85F4E00D98B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D474B72AE85F4E00D98B2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67D474B92AE85F4E00D98B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67D474BC2AE85F4E00D98B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67D474BE2AE85F5400D98B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D474C12AE85F5400D98B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D474C32AE85F5400D98B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D474C92AE8728300D98B2A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67ACA95E2AEBD8DB00B511AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67D474C92AE8728300D98B2A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67ACA95F2AEBD8EF00B511AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				67C3CC7D2AEA8F6D0095939B /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		67D474A92AE85F4E00D98B2A = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +84,13 @@
 			children = (
 				67D474B52AE85F4E00D98B2A /* AppDelegate.swift */,
 				67D474B72AE85F4E00D98B2A /* SceneDelegate.swift */,
-				67D474B92AE85F4E00D98B2A /* ViewController.swift */,
 				67D474BB2AE85F4E00D98B2A /* Main.storyboard */,
+				67ACA9602AEBE6C900B511AF /* TabBarViewController.swift */,
+				678895D92AEB110700844A0E /* PersonalListsViewController.swift */,
+				678895DD2AEB138D00844A0E /* SelectedContactViewController.swift */,
+				678895DB2AEB118900844A0E /* AdvancedPersonalListsViewController.swift */,
+				67ACA95E2AEBD8DB00B511AF /* Model */,
+				67ACA95F2AEBD8EF00B511AF /* Services */,
 				67D474BE2AE85F5400D98B2A /* Assets.xcassets */,
 				67D474C02AE85F5400D98B2A /* LaunchScreen.storyboard */,
 				67D474C32AE85F5400D98B2A /* Info.plist */,
@@ -138,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D474BA2AE85F4E00D98B2A /* ViewController.swift in Sources */,
+				67ACA9612AEBE6C900B511AF /* TabBarViewController.swift in Sources */,
+				678895DC2AEB118900844A0E /* AdvancedPersonalListsViewController.swift in Sources */,
+				678895DA2AEB110700844A0E /* PersonalListsViewController.swift in Sources */,
+				67C3CC7E2AEA8F6D0095939B /* DataStore.swift in Sources */,
+				678895DE2AEB138D00844A0E /* SelectedContactViewController.swift in Sources */,
 				67D474B62AE85F4E00D98B2A /* AppDelegate.swift in Sources */,
+				67D474CA2AE8728300D98B2A /* Person.swift in Sources */,
 				67D474B82AE85F4E00D98B2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +333,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pecherskaya.AddressBookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +364,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +374,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pecherskaya.AddressBookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
