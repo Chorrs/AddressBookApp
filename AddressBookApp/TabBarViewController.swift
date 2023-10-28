@@ -8,11 +8,11 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-    private let person = Person.getPerson()
+    private let person = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Personal Lists"
+        title = "Personal Lists"
         transferData()
     }
     

@@ -71,8 +71,8 @@
                         <viewLayoutGuide key="safeArea" id="hEt-ab-Jsq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7LU-aW-wHY" firstAttribute="top" secondItem="hEt-ab-Jsq" secondAttribute="top" id="EyU-U3-EMM"/>
                             <constraint firstItem="7LU-aW-wHY" firstAttribute="leading" secondItem="hEt-ab-Jsq" secondAttribute="leading" constant="16" id="Jfd-Qe-YcZ"/>
-                            <constraint firstItem="hEt-ab-Jsq" firstAttribute="bottom" secondItem="7LU-aW-wHY" secondAttribute="bottom" constant="592.33000000000004" id="M1O-1e-444"/>
                             <constraint firstItem="hEt-ab-Jsq" firstAttribute="trailing" secondItem="7LU-aW-wHY" secondAttribute="trailing" id="nd9-yE-xv0"/>
                         </constraints>
                     </view>

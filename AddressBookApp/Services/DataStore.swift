@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class DataStore {
+final class DataStore {
     let names = ["Jil", "Jonathan", "Kim", "Liu"]
     let surnames = ["Sander", "Anderson", "Jones", "Jo"]
     let phoneNumbers = ["123", "456", "789", "321"]

@@ -7,8 +7,6 @@
 
 import Foundation
 
-let dataStore = DataStore()
-
 struct Person {
     let name: String
     let surname: String
@@ -21,7 +19,8 @@ struct Person {
 }
 
 extension Person {
-    static func getPerson() -> [Person] {
+    static func getPersons() -> [Person] {
+        let dataStore = DataStore()
         let names = dataStore.names.shuffled()
         let surnames = dataStore.surnames.shuffled()
         let phoneNumber = dataStore.phoneNumbers.shuffled()
@@ -38,12 +37,7 @@ extension Person {
         return person
     }
 }
-    
 
-//let names = dataStore.names.shuffled()
-//let surnames = dataStore.surnames.shuffled()
-//let phoneNumber = dataStore.phoneNumbers.shuffled()
-//let email = dataStore.emails.shuffled()
 
 // EXTENSION Person
 // static func getPerson() -> [Person] {
