@@ -20,14 +20,21 @@ struct Person {
 
 extension Person {
     static func getPersons() -> [Person] {
-        let dataStore = DataStore()
+        var person: [Person] = []
+        let dataStore = DataStore.shared
+        
         let names = dataStore.names.shuffled()
         let surnames = dataStore.surnames.shuffled()
         let phoneNumber = dataStore.phoneNumbers.shuffled()
         let email = dataStore.emails.shuffled()
-        var person: [Person] = []
         
-        for item in 0..<names.count {
+        // определяем массив с минимальным кол-ом элем-ов для опр-ия количества итераций в цикле
+        let iterationCount = min(names.count ,
+                                 surnames.count ,
+                                 phoneNumber.count ,
+                                 email.count )
+        
+        for item in 0..<iterationCount {
             person.append(Person(
                 name: names[item],
                 surname: surnames[item],

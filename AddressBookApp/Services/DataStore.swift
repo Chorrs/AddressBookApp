@@ -7,10 +7,14 @@
 
 import Foundation
 final class DataStore {
+    static let shared = DataStore()
+    
     let names = ["Jil", "Jonathan", "Kim", "Liu"]
     let surnames = ["Sander", "Anderson", "Jones", "Jo"]
     let phoneNumbers = ["123", "456", "789", "321"]
     let emails = ["J.Sander@gmail.com", "Anderson.J@gmail.com", "K.Jones@gmail.com", "L.Jo@gmail.com"]
+    
+    private init() {}
 }
 
 

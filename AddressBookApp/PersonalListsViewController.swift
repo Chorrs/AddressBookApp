@@ -8,7 +8,7 @@
 import UIKit
 
 final class PersonalListsViewController: UITableViewController {
-    var person: [Person]!
+    var persons: [Person]!
     
 // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -16,13 +16,13 @@ final class PersonalListsViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         guard let selectedContactVC = segue.destination as? SelectedContactViewController else { return }
         // Pass the selected object to the new view controller.
-        selectedContactVC.person = person[indexPath.row]
+        selectedContactVC.person = persons[indexPath.row]
     }
 }
 // MARK: - UITableViewDataSource
 extension PersonalListsViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        person.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,7 +31,7 @@ extension PersonalListsViewController {
             withIdentifier: "contactCellIdentifier",
             for: indexPath)
         
-        let person = person[indexPath.row]
+        let person = persons[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName

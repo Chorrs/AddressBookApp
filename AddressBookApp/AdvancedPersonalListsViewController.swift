@@ -8,7 +8,7 @@
 import UIKit
 
 final class AdvancedPersonalListsViewController: UITableViewController {
-    var person: [Person]!
+    var person: [Person] = []
 
 }
 // MARK: - UITableViewDataSource
@@ -33,13 +33,15 @@ extension AdvancedPersonalListsViewController {
         let person = person[indexPath.section]
         var content = cell.defaultContentConfiguration()
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             content.text = person.phoneNumber
             content.image = UIImage(systemName: "phone")
-        } else if indexPath.row == 1 {
+        default:
             content.text = person.email
             content.image = UIImage(systemName: "tray")
         }
+        
         cell.contentConfiguration = content
         return cell
     }

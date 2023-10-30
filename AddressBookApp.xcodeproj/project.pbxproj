@@ -47,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		679DEFD62AF04168009F034A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				67D474BE2AE85F5400D98B2A /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		67AB46D92AEFF1FC00C4AA8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				67D474BB2AE85F4E00D98B2A /* Main.storyboard */,
+				67D474C02AE85F5400D98B2A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		67ACA95E2AEBD8DB00B511AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				67D474B42AE85F4E00D98B2A /* AddressBookApp */,
+				67D474B72AE85F4E00D98B2A /* SceneDelegate.swift */,
+				67D474B52AE85F4E00D98B2A /* AppDelegate.swift */,
 				67D474B32AE85F4E00D98B2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,17 +101,14 @@
 		67D474B42AE85F4E00D98B2A /* AddressBookApp */ = {
 			isa = PBXGroup;
 			children = (
-				67D474B52AE85F4E00D98B2A /* AppDelegate.swift */,
-				67D474B72AE85F4E00D98B2A /* SceneDelegate.swift */,
-				67D474BB2AE85F4E00D98B2A /* Main.storyboard */,
 				67ACA9602AEBE6C900B511AF /* TabBarViewController.swift */,
 				678895D92AEB110700844A0E /* PersonalListsViewController.swift */,
 				678895DD2AEB138D00844A0E /* SelectedContactViewController.swift */,
 				678895DB2AEB118900844A0E /* AdvancedPersonalListsViewController.swift */,
 				67ACA95E2AEBD8DB00B511AF /* Model */,
 				67ACA95F2AEBD8EF00B511AF /* Services */,
-				67D474BE2AE85F5400D98B2A /* Assets.xcassets */,
-				67D474C02AE85F5400D98B2A /* LaunchScreen.storyboard */,
+				67AB46D92AEFF1FC00C4AA8B /* Storyboards */,
+				679DEFD62AF04168009F034A /* Sources */,
 				67D474C32AE85F5400D98B2A /* Info.plist */,
 			);
 			path = AddressBookApp;
